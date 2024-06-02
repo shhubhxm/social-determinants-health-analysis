@@ -8,6 +8,7 @@ Before you begin, ensure you have the following software installed on your machi
 - Python 3.7+
 - Node.js (includes npm)
 - Git
+- [Git LFS](https://git-lfs.github.com/)
 
 ## Getting Started
 
@@ -56,6 +57,56 @@ Before you begin, ensure you have the following software installed on your machi
 3. Install the required Python packages:
    ```bash
    pip install -r requirements.txt
+   ```
+
+#### Download Datasets
+
+Ensure you have AWS CLI configured and run the following script to download the datasets:
+```bash
+bash setup_backend.sh
+```
+
+### Setting Up Git LFS
+
+1. **Install Git LFS**:
+   - **macOS**:
+     ```bash
+     brew install git-lfs
+     ```
+   - **Windows**:
+     Download and install from [Git LFS](https://git-lfs.github.com/).
+
+2. **Initialize Git LFS**:
+   Run this command in your repository to initialize Git LFS:
+   ```bash
+   git lfs install
+   ```
+
+3. **Create `.gitattributes` File**:
+   Create a `.gitattributes` file in the root of your repository with the following content:
+   ```text
+   *.csv filter=lfs diff=lfs merge=lfs -text
+   ```
+
+4. **Track Large Files with Git LFS**:
+   In your terminal, navigate to the root of your repository and run:
+   ```bash
+   git lfs track "*.csv"
+   ```
+
+5. **Add and Commit `.gitattributes` File**:
+   Ensure the `.gitattributes` file is added to the repository:
+   ```bash
+   git add .gitattributes
+   git commit -m "Track CSV files with Git LFS"
+   ```
+
+6. **Add and Commit Your Large Files**:
+   Now you can add and commit your large CSV files:
+   ```bash
+   git add path/to/your/largefile.csv
+   git commit -m "Add large dataset"
+   git push origin main
    ```
 
 ### Setting Up the Frontend
