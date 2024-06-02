@@ -1,4 +1,4 @@
-Here's a `README.md` file that provides clear instructions for your teammates to set up the project after cloning it from GitHub. This will include steps for both Windows and macOS environments.
+Here is a `README.md` file that provides clear instructions for your teammates to set up the project after cloning it from GitHub. This will include steps for both Windows and macOS environments.
 
 # Social Determinants Health Analysis
 
