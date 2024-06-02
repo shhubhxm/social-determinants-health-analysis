@@ -1,5 +1,3 @@
-Here is a `README.md` file that provides clear instructions for your teammates to set up the project after cloning it from GitHub. This will include steps for both Windows and macOS environments.
-
 # Social Determinants Health Analysis
 
 This repository contains the backend and frontend code for analyzing social determinants of health. The backend is built with Flask and the frontend with React.
@@ -19,7 +17,7 @@ Before you begin, ensure you have the following software installed on your machi
 2. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/jinishshah00/social-determinants-health-analysis.git
-   cd social-determinants-health
+   cd social-determinants-health-analysis
    ```
 
 ### Setting Up the Backend
@@ -70,6 +68,16 @@ Before you begin, ensure you have the following software installed on your machi
 2. Install the frontend dependencies:
    ```bash
    npm install
+   ```
+
+3. Install Material-UI framework and its dependencies:
+   ```bash
+   npm install @mui/material @emotion/react @emotion/styled
+   ```
+
+4. Install React Router for navigation:
+   ```bash
+   npm install react-router-dom
    ```
 
 ### Starting the Development Servers
