@@ -13,18 +13,7 @@ function App() {
 
     return (
         <div>
-            <Plot
-                data={[
-                    {
-                        x: data.map(d => d.income),
-                        y: data.map(d => d.life_expectancy),
-                        type: 'scatter',
-                        mode: 'markers',
-                        marker: { color: 'red' },
-                    },
-                ]}
-                layout={{ title: 'Income vs Life Expectancy' }}
-            />
+            <h1>This is Test.</h1>
         </div>
     );
 }
